@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleC.css">
+    <script type="text/javascript" src="app.js"></script>
+    <title>Cifrado</title>
+</head>
+
+<body>
+    <header>
+        <img src="imagenes para la pagina/logo1.png" alt="Logo-AplicacionEncriptar">
+    </header>
+
+    <main>
+        <section class="seccion1">
+        <input type="text" id="texto-encriptado" placeholder="Escribe tu texto aquí.">
+        
+                <div class="contenedor_botones">
+                    <button type="button" id="botonEncriptado">Encriptar</button>
+                    <button type="button" id="botonDesencriptado">Desencriptar</button>
+                </div>
+        </section>
+
+        <section class="seccion2">
+            <textarea name="resultado" id="texto-desencriptado" cols="30" rows="10"></textarea>
+            <button type="button" id="botonCopiar">Copiar</button>
+
+            <div class="contenedor_imagen">
+                <img id="gatito" src="gatito.png" alt="gatito">
+            </div>
+            <div class="contenedor_parrafo">
+                 <p>Ingresa el texto que desee encriptar.</p>
+            </div>
+            
+        </section>
+    </main>
+
+    <footer>
+        Challenge: Encriptador de texto Alura - By Isis Anaya M.
+    </footer>
+</body>
+<script>
+    var btn = document.querySelector("#botonEncriptado");
+    btn.onclick = encriptar;
+
+    var btn2 = document.querySelector("#botonDesencriptado");
+    btn2.onclick = desencriptar;
+
+    var btn3 = document.querySelector("#botonCopiar");
+    btn3.onclick = copiar;
+</script>
+</html>
